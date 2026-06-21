@@ -58,15 +58,11 @@ export const Hero: React.FC = () => {
               <Button variant="primary" onClick={() => handleScrollTo('projects')}>
                 View Projects
               </Button>
-      
-              <Button 
-                variant="secondary" 
-                as="a" // Tells the component to render as an HTML anchor tag
-                href="../public/Naman_Thakkar_Resume_After_Projects.pdf" 
-                download="My_Resume.pdf"
-              > 
+              <a href="/Naman_Thakkar_Resume_After_Projects" download="my_resume.pdf">
+              <Button variant='secondary'> 
                <FileText size={16} /> Download Resume 
               </Button>
+              </a>
 
             </motion.div>
 

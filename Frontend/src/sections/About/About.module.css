@@ -1,0 +1,48 @@
+
+.about {
+  position: relative;
+  background-color: var(--color-background);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  color: var(--color-text);
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.content {
+  max-width: 780px;
+}
+
+.text {
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.highlightTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}

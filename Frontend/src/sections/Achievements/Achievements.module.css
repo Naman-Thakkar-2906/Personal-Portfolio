@@ -1,0 +1,76 @@
+
+.achievements {
+  position: relative;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.content {
+  max-width: 800px;
+}
+
+.achievementCard {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(139, 94, 60, 0.1);
+  border: 1px solid var(--color-primary);
+  color: var(--color-secondary);
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(139, 94, 60, 0.15);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.awardTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.awardDescription {
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .achievementCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+}

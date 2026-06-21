@@ -1,0 +1,34 @@
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+/* Glass shine overlay */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--glass-gradient);
+  pointer-events: none; /* Make sure overlays don't block button clicks */
+  opacity: 0.6;
+}
+
+/* Hover effects */
+.hoverEffect:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-lg), 0 10px 30px -10px rgba(139, 94, 60, 0.06);
+}
+
+.clickable {
+  cursor: pointer;
+}

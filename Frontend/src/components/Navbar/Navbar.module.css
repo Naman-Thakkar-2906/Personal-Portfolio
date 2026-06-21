@@ -1,0 +1,130 @@
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.scrolled {
+  background-color: rgba(15, 15, 15, 0.95);
+  border-bottom-color: var(--color-border-hover);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  font-weight: 500;
+  position: relative;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.link:hover, 
+.activeLink {
+  color: var(--color-text);
+}
+
+/* Subtle line indicator under active/hover nav links */
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.link:hover::after, 
+.activeLink::after {
+  width: 100%;
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile Nav Drawer */
+.mobileMenu {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 999;
+}
+
+.mobileLink {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.mobileActiveLink {
+  color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  
+  .menuBtn {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+}
+

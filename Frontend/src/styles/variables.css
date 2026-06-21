@@ -1,0 +1,43 @@
+
+:root {
+  /* Color Palette - Handcrafted Brown Dark Theme */
+  --color-primary: #8B5E3C;          /* Tasteful Sienna Brown */
+  --color-primary-rgb: 139, 94, 60;
+  --color-primary-hover: #A67C52;    /* Lighter Brown for interactive hover states */
+  --color-secondary: #C89F7B;        /* Sand Tan Accent */
+  --color-secondary-rgb: 200, 159, 123;
+  
+  --color-background: #0f0f0f;       /* Deep Charcoal (almost black) */
+  --color-surface: #181818;          /* Flat Dark Charcoal surface */
+  --color-surface-hover: #222222;    /* Interactive hover highlight */
+  --color-card: #222222;             /* Custom Card background */
+  --color-border: #2C2C2C;           /* Clean dark borders */
+  --color-border-hover: #3D3D3D;     /* Defined border on hover */
+  
+  --color-text: #F5F5F5;             /* Off-white readable text */
+  --color-muted: #B0B0B0;            /* Soft Muted Gray */
+  --color-success: #10b981;
+  
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Layout & Spacing */
+  --max-width: 1100px;
+  --border-radius-sm: 4px;           /* Straight, sharp developer aesthetic */
+  --border-radius-md: 8px;           /* Standard card radius */
+  --border-radius-lg: 12px;          /* Maximum rounding for profile/banners */
+  
+  /* Simple transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  
+  /* Flat shadows to look handcrafted and realistic */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.4);
+  
+  /* Accent sienna glow for interactive hover states */
+  --shadow-sienna-glow: 0 0 15px rgba(139, 94, 60, 0.1);
+  
+  --glass-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0) 100%);
+}

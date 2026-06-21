@@ -59,9 +59,8 @@ export const Hero: React.FC = () => {
                 View Projects
               </Button>
               <a href="/Naman_Thakkar_Resume_After_Projects" download="my_resume.pdf">
-              <Button variant='secondary'> 
-               <FileText size={16} /> Download Resume 
-              </Button>
+              
+               <FileText size={16} /> Download Resume
               </a>
 
             </motion.div>

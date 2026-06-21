@@ -58,10 +58,16 @@ export const Hero: React.FC = () => {
               <Button variant="primary" onClick={() => handleScrollTo('projects')}>
                 View Projects
               </Button>
-              <a href="/Naman_Thakkar_Resume_After_Projects" download="my_resume.pdf">
-              
-               <FileText size={16} /> Download Resume
-              </a>
+              <a
+              href="/Naman_Thakkar_Resume_After_Projects.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="secondary">
+                <FileText size={16} />
+               View Resume
+              </Button>
+            </a>
 
             </motion.div>
 

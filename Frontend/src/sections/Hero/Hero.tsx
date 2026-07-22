@@ -59,7 +59,7 @@ export const Hero: React.FC = () => {
                 View Projects
               </Button>
               <a
-              href="/Naman_Thakkar_Resume_A.pdf"
+              href="/Naman_Thakkar_Full_Stack_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

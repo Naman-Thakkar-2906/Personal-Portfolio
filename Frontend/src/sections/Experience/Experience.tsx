@@ -6,9 +6,9 @@ import styles from './Experience.module.css';
 
 
 const EXPERIENCE_DATA = {
-  role: 'Software Development Intern',
+  role: 'MERN Stack Developer Trainee',
   company: 'Vedshil',
-  date: 'January 2025 -Present',
+  date: 'January 2026 - Jul 2026',
   techStack: [
     'React',
     'TypeScript',

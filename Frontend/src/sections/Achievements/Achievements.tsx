@@ -24,7 +24,7 @@ export const Achievements: React.FC = () => {
                 <Trophy size={36} />
               </div>
               <div className={styles.details}>
-                <h3 className={styles.awardTitle}>Devang Mehta IT Award 2025</h3>
+                <h3 className={styles.awardTitle}>Devang Mehta IT Award 2025 & 2026</h3>
                 <p className={styles.awardDescription}>
                   Recognized as the Top Ranker of the College for academic excellence and technical performance. 
                   This award highlights academic diligence and a proven ability to apply engineering theory to practical computer development.
